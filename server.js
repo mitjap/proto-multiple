@@ -8,5 +8,15 @@ server.on('listening', function () {
 });
 
 server.on('request', function(req,  res) {
-	res.end("app master " + JSON.stringify(req.rawHeaders));
+	var obj = {
+		branch: "master",
+		process: {
+			env: JSON.stringify(process.env)
+		},
+		req: {
+			header: JSON.stringify(req.headers),
+			rawHeaders: JSON.stringify(req.rawHeaders)
+		}
+	}
+	res.end(JSON.stringify(obj));
 });
