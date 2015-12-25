@@ -1,7 +1,7 @@
 var http = require('http');
 
 var server = http.createServer();
-server.listen(process.env.PORT || 81);
+server.listen(process.env.REAL_PORT || process.env.PORT || 81);
 
 server.on('listening', function () {
   console.log("Server listening on port %d in %s mode");
