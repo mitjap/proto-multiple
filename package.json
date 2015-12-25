@@ -1,0 +1,12 @@
+{
+  "name": "proto-multiple",
+  "version": "1.0.0",
+  "description": "proto app for multiple instances on one devops\u001b[1;5D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Daws devops instance",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
