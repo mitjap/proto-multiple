@@ -8,5 +8,5 @@ server.on('listening', function () {
 });
 
 server.on('request', function(req,  res) {
-	res.end("app maseter " + JSON.stringify(req.rawHeaders));
+	res.end("app master " + JSON.stringify(req.rawHeaders));
 });
